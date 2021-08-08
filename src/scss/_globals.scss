@@ -9,7 +9,50 @@ html {
 }
 
 body {
+    min-height: 100vh;
     background-color: $background;
     color: $white;
-    min-height: 100vh;
+    font-family: $f-body;
+    font-size: 1.4rem;
+    font-weight: $f-400;
+
+    overflow-x: hidden;
+
+    &.noscroll {
+        overflow: hidden;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3.6rem;
+    font-family: $f-title;
+}
+
+a,
+a:visited {
+    color: $white;
+    text-decoration: none;
+}
+
+.container {
+    width: 95%;
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+// Visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
 }

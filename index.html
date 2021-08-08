@@ -18,13 +18,85 @@
         <link rel="stylesheet" href="/public/css/app.min.css" />
         <link rel="stylesheet" href="/public/css/app.min.css.map" />
     </head>
-    <head>
-        <nav>
-            <a href="#">THIS INTERIOR</a>
-        </nav>
-    </head>
-
     <body>
+        <header class="header">
+            <div class="overlay has-fade"></div>
+            <nav class="container header__nav">
+                <a href="#" class="header__btn">THIS INTERIOR</a>
+
+                <a
+                    id="btnHamburger"
+                    href="#"
+                    class="header__toggle hide-for-desktop"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+
+                <div class="header__links hide-for-mobile">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Collection</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+
+            <div class="header__menu has-fade">
+                <a href="#" class="active">Home</a>
+                <a href="#">Collection</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="info">
+                    <h1>Modern interior</h1>
+
+                    <p>
+                        A full-service residential & commercial interior design
+                        and staging company offering professional organizing &
+                        eco-services
+                    </p>
+
+                    <a href="#" class="info__link">Read more</a>
+                </div>
+
+                <div class="info">
+                    <img
+                        class="info__img"
+                        src="/public/img/photo1.webp"
+                        alt="Interior Insure"
+                    />
+
+                    <div class="user">
+                        <div>
+                            <img
+                                class="user__img"
+                                src="/public/img/photo2.webp"
+                                alt="Profile photo"
+                            />
+                        </div>
+
+                        <div class="user__info">
+                            <h3>Aliza Webber</h3>
+                            <p>Interior designer</p>
+                        </div>
+
+                        <div class="user__works">
+                            <p>Designed in 2020 by Aliza Webber</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>creaded by <strong>ericksk</strong> - devChallenges.io</p>
+        </footer>
+
         <script src="/public/js/app.js"></script>
     </body>
 </html>
